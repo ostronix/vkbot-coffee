@@ -14,6 +14,6 @@ vk = new IMPORT_VK
 method = new IMPORT_VK
 .Method (coffee: 0)
 
-event = (index) => method.event ((response) -> response.send ('Привет!'))
+event = (message) => method.event ((response) -> response.send (message))
 
-event ('message_new')
+event ('Привет!')
